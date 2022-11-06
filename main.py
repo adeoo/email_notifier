@@ -6,10 +6,6 @@ import time
 
 email_list = ["moussaadel97@gmail.com"]
 
-toast = ToastNotifier()
-toast.show_toast("email_notifier", "The process has been started", duration=10)
-os.chdir(r"C:\Users\mouss\Desktop\root\personal_projects\scripts\email_notifier")
-
 
 def main():
     time.sleep(60)
