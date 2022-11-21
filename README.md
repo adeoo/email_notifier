@@ -1,2 +1,2 @@
 # email_notifier
-This script checks if the specified web pages have updated, if true, it notifies me via email.
+This script checks if my university and my job's web pages have updated, if true, it sends me the updates via email.
