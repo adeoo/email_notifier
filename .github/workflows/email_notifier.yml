@@ -2,7 +2,7 @@ name: email-notifier
 
 on:
   schedule:
-    - cron: '45 15 * * *' # runs at 12:45 UTC everyday
+    - cron: '02 16 * * *' # runs at 12:45 UTC everyday
 
 jobs:
   build:
