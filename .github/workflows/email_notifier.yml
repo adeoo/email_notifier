@@ -2,7 +2,7 @@ name: email-notifier
 
 on:
   schedule:
-    - cron: '36 18 * * *' # runs at 12:45 UTC everyday
+    - cron: '50 18 * * *' # runs at 12:45 UTC everyday
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3 # checkout the repository content to github runner
 
       - name: setup python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: '3.11.1' # install the python version needed
           
