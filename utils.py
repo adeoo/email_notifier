@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import smtplib
 from email.message import EmailMessage
 import json
-import pw
 import urllib.request
+import os
 
 
 def connected(host='http://google.com'):
@@ -21,8 +21,8 @@ def email_alert(subject, body, to):
     msg.set_content(body)
 
     # Gmail API key
-    user = pw.user
-    password = pw.pw
+    user = os.environ.get('EMAIL_ADDRESS')
+    password = os.environ.get('EMAIL_PASSWORD')
 
     msg['from'] = user
     msg['subject'] = subject
