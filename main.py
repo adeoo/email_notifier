@@ -1,6 +1,4 @@
 from utils import *
-import pywintypes
-from win10toast import ToastNotifier
 import os
 import time
 
