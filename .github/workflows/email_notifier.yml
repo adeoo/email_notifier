@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '57 19 * * *' # At 00:00 on Monday
+    - cron: '28 12 * * *' # At 00:00 on Monday
 
 jobs:
   build:
@@ -20,6 +20,7 @@ jobs:
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
+          pip install --upgrade setuptools
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
